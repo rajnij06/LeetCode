@@ -3,7 +3,7 @@ public class AssignmentQ5 {
     public static void main (String[] args) {
 
         // Test cases
-        String str = "1A3d4s5t";
+        String str = "\"A2v576e4";
         //String str = "a1A3d4s5t";
         //String str = "A2bb2d4";
         //String str = "1A2bb2d4";

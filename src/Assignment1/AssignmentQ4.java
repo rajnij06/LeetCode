@@ -3,7 +3,7 @@ public class AssignmentQ4 {
     public static void main (String[] args) {
 
         // Test cases
-        String ransomNote = "a";    String magazine  = "b";
+        String ransomNote = "fihjjjjei";    String magazine  = "hjibagacbhadfaefdjaeaebgi";
         //String ransomNote = "aa";   String magazine  = "ab";
         //String ransomNote = "aa";   String magazine  = "aab";
         //String ransomNote = "aa";   String magazine  = "aba";
