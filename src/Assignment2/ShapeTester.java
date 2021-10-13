@@ -1,3 +1,5 @@
+package Assignment2;
+
 public class ShapeTester {
     public static void main(String[] args) {
         Shape shape1 = new Shape("Shape1", "pink");

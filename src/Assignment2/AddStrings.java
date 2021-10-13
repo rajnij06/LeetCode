@@ -1,3 +1,5 @@
+package Assignment2;
+
 public class AddStrings {
     public static void main (String[] args) {
         String num1 = "11"; String num2 = "123";

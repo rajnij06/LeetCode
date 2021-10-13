@@ -1,3 +1,5 @@
+package Assignment2;
+
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
@@ -8,7 +10,9 @@ public class MoveZeroes {
 //        int[] nums = {0};
 //        int[] nums = {0,0,0,3,12};
 //        int[] nums = {0,0,0,3,0,0,0};
-        System.out.println("3. Moving all 0's to the end : "+Arrays.toString(movezero(nums)));
+//        int[] nums = {0,0,0,-3,0,0,-1000};
+//        int[] nums = {0,-1000};
+        System.out.println(Arrays.toString(movezero(nums)));
     }
     public static int[] movezero(int[] nums) {
         int n=nums.length;

@@ -1,3 +1,5 @@
+package Assignment2;
+
 public class Shape {
     String name,color;
     int area,perimeter;

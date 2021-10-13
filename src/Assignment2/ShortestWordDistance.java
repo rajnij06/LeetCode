@@ -1,3 +1,5 @@
+package Assignment2;
+
 import java.lang.reflect.Array;
 
 public class ShortestWordDistance {
@@ -11,7 +13,7 @@ public class ShortestWordDistance {
 //        String[] wordsDict = {"a","b","c","a","b","c","b","c","b","a"};
 //        String word1 = "a"; String word2 = "c";
 
-        System.out.println("2. Shortest distance between these two words in the list is : "+(shortest(wordsDict,word1,word2)));
+        System.out.println(shortest(wordsDict,word1,word2));
     }
     public static int shortest (String[] wordsDict, String word1, String word2) {
         int shortestd= wordsDict.length;

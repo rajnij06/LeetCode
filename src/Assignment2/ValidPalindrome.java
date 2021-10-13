@@ -1,3 +1,5 @@
+package Assignment2;
+
 import java.security.SecureRandom;
 import java.util.ArrayList;
 
@@ -7,7 +9,7 @@ public class ValidPalindrome {
         String s = "race a car";
         System.out.println(palindrome(s));
     }
-    public static String palindrome(String s) {
+    public static boolean palindrome(String s) {
         s=s.toLowerCase();
         ArrayList arr = new ArrayList();
         int i=0;
@@ -21,11 +23,11 @@ public class ValidPalindrome {
         int m = 0; int n = arrSize;
         while (m < n) {
             if (arr.get(m) != arr.get(n)) {
-                return "not palindrome";
+                return false;
             }
             m++;
             n--;
         }
-        return "Palindrom";
+        return true;
     }
 }

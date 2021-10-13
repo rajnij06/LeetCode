@@ -1,3 +1,5 @@
+package Assignment2;
+
 import java.awt.*;
 import java.util.Arrays;
 
@@ -6,13 +8,14 @@ public class StringCompression {
     public static void main (String[] args) {
 
         char[] chars= {'a','a','b','b','c','c','c'};
-        //char[] chars= {'a'};
-        //char[] chars= {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
+//        char[] chars= {'a'};
+//        char[] chars= {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
         //char[] chars= {'a','a','a','b','b','a','a'};
-        //char[] chars={'a','a','a','#'};
-        System.out.println(Arrays.toString(compress(chars)));
+//        char[] chars={'a','a','a','a','#'};
+//        char[] chars={'a','a','a','a','#', '&'};
+        System.out.println(compress(chars));
     }
-    public static char[] compress(char[] chars){
+    public static int compress(char[] chars){
         String s="";
         int k=0;
         if (chars.length==1) {
@@ -40,7 +43,7 @@ public class StringCompression {
                 }
             }
         }
-        System.out.println(k);
-        return chars;
+        System.out.println(Arrays.toString(chars));
+        return chars.length;
     }
 }

@@ -1,3 +1,5 @@
+package Assignment2;
+
 public class ReverseWords {
     public static void main (String[] args) {
 //        String s = "the sky is     blue";

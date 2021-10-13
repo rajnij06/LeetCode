@@ -1,3 +1,7 @@
+package Assignment2;
+
+import java.util.Arrays;
+
 public class SpiralMatrix {
 
     public static void main (String[] agrs) {
@@ -8,9 +12,7 @@ public class SpiralMatrix {
 //        int[][] matrix = {{1,2,3,4}};
 //        int[][] matrix = {{1,2},{4,3}};
         int[] result = spiral(matrix);
-        for (int i: result) {
-            System.out.print(i + " ");
-        }
+        System.out.println(Arrays.toString(result));
     }
     public static int[] spiral(int[][] matrix) {
         int row = matrix.length - 1;
