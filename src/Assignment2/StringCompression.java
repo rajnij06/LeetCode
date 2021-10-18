@@ -44,6 +44,6 @@ public class StringCompression {
             }
         }
         System.out.println(Arrays.toString(chars));
-        return chars.length;
+        return k;
     }
 }
