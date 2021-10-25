@@ -1,4 +1,4 @@
-package LeetCode;
+package CodeLab;
 
 import java.util.Arrays;
 //String Compression	https://leetcode.com/problems/string-compression/
