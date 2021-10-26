@@ -1,9 +1,9 @@
 package CodeLab;
 
-import java.time.Year;
 import java.util.Arrays;
 
 //Merge Sorted Array	https://leetcode.com/problems/merge-sorted-array/
+
 public class MergeSortedArray {
     public static void main(String[] args) {
         int[] num1 = {1}; int[] num2 = {};

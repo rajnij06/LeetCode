@@ -1,7 +1,9 @@
 package CodeLab;
 
 import java.util.Arrays;
-//String Compression	https://leetcode.com/problems/string-compression/
+
+// https://leetcode.com/problems/string-compression/
+
 public class StringCompression {
     public static void main (String[] args) {
 

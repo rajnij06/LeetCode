@@ -1,5 +1,7 @@
 package CodeLab;
 
+//https://leetcode.com/problems/implement-strstr/
+
 public class EmplementstrStr {
     public static void main (String[] args) {
 //        String haystack = "aaaaa"; String needle = "bba";
