@@ -9,15 +9,13 @@ class Traffic_Light_Controlled_Intersection {
             signalTraffic = new Signal();
         }
 
-        public void carArrived(int carNo, int roadNo, int direction, Runnable turnGreen, Runnable passCar) {
+        public void carArrived(int carNo, int roadNo, int direction) {
             synchronized (signalTraffic) {
                 if (signalTraffic.greenRoadA != roadNo) {
-                    turnGreen.run();
                     signalTraffic.greenRoadA = roadNo;;
                     System.out.println("Light on road " + roadNo + " turned green!");
                 }
                 System.out.println("Car " + carNo + " on road " + roadNo + " crossed the intersection in direction " + direction);
-                passCar.run();
             }
         }
 
@@ -39,17 +37,7 @@ class TrafficLights {
                             trafficLight.carArrived(
                                     carNo,
                                     (int) Math.floor(Math.random() * (2 - 1 + 1) + 1),
-                                    (int) Math.floor(Math.random() * (4 - 1 + 1) + 1),
-                                    new Runnable() {
-                                        @Override
-                                        public void run() {
-                                        }
-                                    },
-                                    new Runnable() {
-                                        @Override
-                                        public void run() {
-                                        }
-                                    }
+                                    (int) Math.floor(Math.random() * (4 - 1 + 1) + 1)
                             );
                         } catch (Exception e) {
                             e.printStackTrace();
