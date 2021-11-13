@@ -13,8 +13,10 @@ class Traffic_Light_Controlled_Intersection {
             synchronized (signalTraffic) {
                 if (signalTraffic.greenRoadA != roadNo) {
                     turnGreen.run();
-                    signalTraffic.greenRoadA = roadNo;
+                    signalTraffic.greenRoadA = roadNo;;
+                    System.out.println("Light on road " + roadNo + " turned green!");
                 }
+                System.out.println("Car " + carNo + " on road " + roadNo + " crossed the intersection in direction " + direction);
                 passCar.run();
             }
         }
@@ -41,13 +43,11 @@ class TrafficLights {
                                     new Runnable() {
                                         @Override
                                         public void run() {
-                                            System.out.println("Turned green");
                                         }
                                     },
                                     new Runnable() {
                                         @Override
                                         public void run() {
-                                            System.out.println("Pass car");
                                         }
                                     }
                             );
